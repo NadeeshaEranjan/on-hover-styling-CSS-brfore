@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		li {
+			display: inline-block;
+			position: relative;
+			padding-bottom: 15px;
+			border: 1px solid rgba(204, 204, 204, 0.35);
+			padding: 5px;
+		}
+
+		li > a {
+			border: none;
+			color: #676767;
+			font-weight: 300;
+			font-size: 14px;
+			margin-top: 13px;
+			text-decoration: none;
+		}
+
+		li:hover:before {
+			width: 100%;
+			background: #83CCD5;
+			transition: width .5s ease;
+		}
+
+		li:hover:after {
+			width: 100%;
+			background: transparent;
+			transition: all 0s ease;
+		}
+
+		li:before {
+			content: '';
+			display: block;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			height: 3px;
+			width: 0;
+			transition: width 0s ease, background .5s ease;
+		}
+
+		li:after {
+			content: '';
+			display: block;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			height: 3px;
+			width: 0;
+			background: #83CCD5;
+			transition: width .5s ease;
+		}
+	</style>
+</head>
+<body>
+	<ul id="oc-menu-wrap" class="nav navbar-nav nav-store oc-menu-wrap">
+		<li data-id="43" class="menu-parent">
+			<a target="_self" class=" oc-tools oc-aed" data-action="" href="#">About Us</a>
+		</li>
+		<li data-id="48" class="menu-parent">
+			<a target="_self" class=" oc-tools oc-aed" data-action="" href="#">Home</a>
+		</li>
+		<li data-id="44" class="dropdown  menu-parent">
+			<a target="_self" class="dropdown-toggle oc-tools oc-aed" data-toggle="dropdown" data-action="" href="#">Contact us<i class="fa fa-caret-down"></i></a>
+		</li>
+	</ul>
+</body>
+</html>
